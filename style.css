@@ -1,0 +1,182 @@
+/* ОБЩИЕ СТИЛИ (Черно-оранжевая тема) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #121212; /* Глубокий черный */
+    color: #FFFFFF; /* Белый текст */
+}
+
+/* ШАПКА */
+header {
+    background-color: #1A1A1A;
+    border-bottom: 2px solid #FF6B00; /* Оранжевая полоса */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo-orange { color: #FF6B00; }
+.logo-white { color: #FFFFFF; }
+
+/* КНОПКИ ЯЗЫКОВ */
+.lang-switcher button {
+    background: none;
+    border: 1px solid #FF6B00;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.lang-switcher button.active, .lang-switcher button:hover {
+    background-color: #FF6B00;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* ГЛАВНЫЙ БАННЕР */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(180deg, #1A1A1A 0%, #121212 100%);
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #FF6B00;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    font-size: 18px;
+    color: #CCCCCC;
+    line-height: 1.6;
+}
+
+.btn-main {
+    display: inline-block;
+    background-color: #FF6B00;
+    color: #000000;
+    text-decoration: none;
+    padding: 12px 30px;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.btn-main:hover {
+    background-color: #E05E00;
+    transform: translateY(-2px);
+}
+
+/* РАЗДЕЛ КОМАНДЫ */
+.team-section, .map-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    color: #FF6B00;
+    border-left: 4px solid #FF6B00;
+    padding-left: 10px;
+    margin-bottom: 30px;
+}
+
+.dept-title {
+    color: #E0E0E0;
+    margin: 30px 0 15px 0;
+    font-size: 20px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* КАРТОЧКА СОТРУДНИКА */
+.member-card {
+    background-color: #1A1A1A;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.member-card:hover {
+    border-color: #FF6B00;
+    transform: translateY(-5px);
+}
+
+.member-avatar {
+    width: 100px;
+    height: 100px;
+    background-color: #333333;
+    border-radius: 50%;
+    margin: 0 auto 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666666;
+    overflow: hidden;
+}
+
+.member-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.member-card h4 {
+    color: #FFFFFF;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.member-card p {
+    color: #A0A0A0;
+    font-size: 14px;
+}
+
+/* КАРТА */
+.map-container {
+    border: 2px solid #333333;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* ПОДВАЛ */
+footer {
+    background-color: #1A1A1A;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+    color: #666666;
+    font-size: 14px;
+    border-top: 1px solid #333333;
+}

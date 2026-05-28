@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Банк Бай-Түшүм — Филиал Өзгөн</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ШАПКА САЙТА (HEADER) -->
+    <header>
+        <div class="header-container">
+            <!-- Логотип (заглушка, можно заменить на картинку logo.png) -->
+            <div class="logo">
+                <span class="logo-orange">Бай</span>-<span class="logo-white">Түшүм</span>
+            </div>
+            
+            <!-- Переключатель языков -->
+            <div class="lang-switcher">
+                <button onclick="changeLanguage('kg')" id="btn-kg">KG</button>
+                <button onclick="changeLanguage('ru')" id="btn-ru" class="active">RU</button>
+                <button onclick="changeLanguage('en')" id="btn-en">EN</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ГЛАВНЫЙ БАННЕР (HERO СЕКЦИЯ) -->
+    <section class="hero">
+        <h1 id="hero-title">Банк «Бай-Түшүм»</h1>
+        <p id="hero-desc">Универсальный банк с более чем 25-летней историей. Мы являемся одним из лидеров в финансовом секторе Кыргызстана, предоставляя надежные услуги для вас и вашего бизнеса.</p>
+        <a href="https://www.baitushum.kg" target="_blank" class="btn-main" id="hero-btn">Официальный сайт</a>
+    </section>
+
+    <!-- РАЗДЕЛ СОТРУДНИКОВ -->
+    <section class="team-section">
+        <h2 id="team-title">Наша Команда</h2>
+        
+        <!-- Отдел кредитования (6 сотрудников) -->
+        <h3 class="dept-title" id="dept-credit">Отдел кредитования (6 сотрудников)</h3>
+        <div class="team-grid" id="credit-container">
+            <!-- Карточки создаются автоматически через JavaScript, либо вы можете добавить их вручную ниже -->
+        </div>
+
+        <!-- Отдел операций (3 сотрудника) -->
+        <h3 class="dept-title" id="dept-ops">Отдел операций (3 сотрудника)</h3>
+        <div class="team-grid" id="ops-container"></div>
+
+        <!-- Касса (2 сотрудника) -->
+        <h3 class="dept-title" id="dept-cash">Касса (2 сотрудника)</h3>
+        <div class="team-grid" id="cash-container"></div>
+    </section>
+
+    <!-- КАРТА 2ГИС И ТЕРМИНАЛЫ -->
+    <section class="map-section">
+        <h2 id="map-title">Филиалы и Терминалы на карте</h2>
+        <div class="map-container">
+            <!-- Виджет карты 2ГИС (г. Узген / Ошская область) -->
+            <iframe src="https://2gis.kg/search/%D0%91%D0%B0%D0%B9%20%D0%A2%D1%83%D1%88%D1%83%D0%BC/center/73.300457,40.767425/zoom/14" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- ПОДВАЛ САЙТА (FOOTER) -->
+    <footer>
+        <p>&copy; 2026 Банк «Бай-Түшүм». Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
